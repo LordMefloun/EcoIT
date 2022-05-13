@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/landingblock.css">
+    <link rel="stylesheet" href="css/phoneclicking.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar nv p-3" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+            <a class="navbar-item" href="https://">
+                <img src="img/logo.png" style="width: 70px;">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            </div>
+        
+            <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+        
+                <a class="navbar-item has-text-weight-bold navlink mt-1">
+                About us
+                </a>
+        
+            </div>
+        
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button" style="border:none;border-radius: 10000px;" >
+                          <img src="img/ig.png">
+                        </a>
+                        <a class="button btn is-success" style="border:none;border-radius: 10000px;" >
+                            <strong>CZ</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </nav>
+
+      <script>
+
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var html = document.getElementById("html");
+
+        var sticky = 10;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("is-fixed-top");
+                html.classList.add("has-navbar-fixed-top");
+                navbar.classList.add("p-5");
+                navbar.classList.add("nav-activated");
+            } else {
+                navbar.classList.remove("is-fixed-top");
+                html.classList.remove("has-navbar-fixed-top");
+                navbar.classList.remove("p-5");
+                setTimeout(function (){
+                    navbar.classList.remove("nav-activated");
+                }, 280);
+            }
+        }
+      </script>
+
+
+      <div class="container">
+        <div class="columns" style="margin-left: 20px;">
+            <div class="column landingblock">
+                <h1 class="ltitle">                    
+                    Hi!
+                    We are students from Střední odborná škola Hranice</h1>
+                <p class="lphar  mt-5">
+                    where we study either <strong class="has-text-success"> Security </strong> and  <strong class="has-text-success"> Law </strong> or  <strong class="has-text-success"> Information Systems Administrator branches</strong>. We present you our company  <strong class="has-text-success"> ECO it</strong> and  <strong class="has-text-success"> our app REDIVIO</strong><strong></strong>. The content of the app. The provided recycling symbols will help users to sort the type of waste correctly.
+                    </p>
+
+                <div class="buttons mt-5">
+                    <a class="button btn btn-1" >
+                      <strong>Download for Android</strong>
+                    </a>
+                    <a class="button is-success is-outlined" style="transition: all 270ms;">
+                        <strong>Download for iOS</strong>
+                      </a>
+                </div>
+
+            </div>
+            <div class="column has-text-centered">
+                <img src="img/mockuprotated.png" style="margin-top: 100px;width: 2000px;">
+            </div>
+        </div>
+
+    <div class="columns">
+        <div class="column">
+            <h1 class="ltitle" style="margin-left: 26px;width: 90%;">Problem</h1>
+
+            <p class="lphar mt-2"  style="margin-left: 26px;width: 90%;">
+            Every year the number of people who are sorting waste increases slightly, which we can see in decreasing amount of municipal solid waste and growing amount of sorted waste. People are mostly sorting paper, plastics and glass. Collected biowaste comes mostly from gardens in adjacent villages. In residential areas with block of flats, sorted biowaste is insignificant and in some places waste containers are completely missing. It is a commonplace that people throw into biowaste container something that does not belong there, and owing to this, the waste is not able to be recycled. Moreover, there is often a low number of containers for edible fats, oils and textile available in towns.
+
+            </p>
+
+
+        </div>
+        <div class="column">
+            <p class="lphar"  style="margin-left: 26px;width: 90%;margin-top: 50px">
+                Therefore, near blocks of flats people create illegal waste dumps, while they still think that they sort waste in that way. It is necessary to sort waste correctly to ensure it can be recycled and amount of other municipal solid waste can decrease even more. We are convinced that the app for right waste sorting may be a solution of the waste sorting problem in a community.</p>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+    
+    <div class="columns" style="margin-top: 150px;margin-left: 20px;">
+        <div class="column has-text-centered">
+            <img src="img/mockup.png" alt="">
+        </div>
+        <div class="column">
+            <h1 class="ltitle">                    
+                REDIVIO</h1>
+            <p class="lphar mt-5" style="width: 90%;" >
+                The core of the app is a  <strong class="has-text-success"> map with locations of waste containers </strong>.  <strong class="has-text-success"> And our goal?</strong> Make waste sorting easier.  <strong class="has-text-success"> How does REDIVIO work?</strong> After installing an app, you will register with a username and password. After login or registration, the app with recycling symbols will open. </p> 
+            <p class="lphar" style="width: 90%;" >
+                    You will choose type of waste, for example plastic, and REDIVIO will automatically find the route to the nearest container for plastics.  <strong class="has-text-success"> The app is also giving you points </strong>. After clicking on the “statistics” icon, the app provides the user with information about collected points. 
+                </p>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+
+<script src="javascript/jquery-3.6.0.slim.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".navbar-burger").click(function() {
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,19 @@
+.list-list li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: item;
+    position: relative;
+  }
+
+
+
+
+.list-list  li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: rgb(140, 207, 159);
+    border-radius: 100%;
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+  }

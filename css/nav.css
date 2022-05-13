@@ -1,0 +1,39 @@
+*{
+    font-family: 'Poppins';
+}
+
+a.navlink:hover
+{
+    color: rgb(122, 197, 138);
+    background-color: rgba(0, 128, 0, 0.151);
+    border-radius: 10px;
+    transition: all 270ms;
+}
+
+.btn:hover
+{
+    color: rgb(27, 25, 25);
+    transition: all 270ms;
+    background-color: rgba(59, 100, 53, 0.459);
+}
+
+.btn
+{
+    color: white;
+}
+
+.btn-1
+{
+    background-color: rgb(122, 197, 138);
+}
+
+.btn-2
+{
+    background-color: rgb(122, 197, 138);
+}
+
+
+.nv{
+    transition: all 270ms;
+    background-color: whitesmoke;
+}

@@ -2,6 +2,10 @@
     font-family: 'Poppins';
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a.navlink:hover
 {
     color: rgb(122, 197, 138);
@@ -35,5 +39,5 @@ a.navlink:hover
 
 .nv{
     transition: all 270ms;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.938);
 }

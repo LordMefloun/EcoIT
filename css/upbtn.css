@@ -1,0 +1,26 @@
+#upbtn
+{
+    position: fixed;
+    right: 100px;
+    top: 200px;
+
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 100px;
+    font-weight: bolder;
+    z-index: 5;
+    font-size: 50px;
+
+    border:none;
+}
+
+@media only screen and (max-width: 1670px) {
+
+    #upbtn{
+        top: unset;
+        right: 20px;
+        bottom: 50px;
+        font-size: 30px;
+    }
+  }

@@ -19,3 +19,31 @@
     width: 90%;
     color: rgb(131, 126, 126);
 }
+
+
+.down
+{
+    transform: perspective(1000px) rotateX(-0deg) rotateY(-5deg) scale3d(1, 1, 1);
+    opacity: 0.9;
+    transition: all 270ms;
+
+
+}
+
+
+.down:hover{
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+
+}
+
+
+@media only screen and (max-width: 1670px) {
+
+    .down
+    {
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+        transition: all 270ms;
+    
+    }
+    
+  }

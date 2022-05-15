@@ -23,6 +23,8 @@ a.navlink:hover
 
 .btn
 {
+    transition: all 270ms;
+
     color: white;
 }
 
@@ -36,8 +38,58 @@ a.navlink:hover
     background-color: rgb(122, 197, 138);
 }
 
+.btn-3
+{
+    background-color: rgb(122, 197, 138);
+}
+
+.btn-3:hover
+{
+    background-color: orange;
+}
+
+.btn-4{
+    background-color: hwb(106 30% 34%);
+}
+
+
+.btn-4:hover{
+    background-color: rgba(0, 128, 0, 0.534);
+    color: white;
+
+}
 
 .nv{
     transition: all 270ms;
+
     background-color: rgba(245, 245, 245, 0.938);
 }
+
+#brand{
+    transition: all 1s;
+}
+
+#navbar-item
+{
+    transition: all 1s;  
+}
+
+.brand-activate{
+    margin-left: -170px;
+}
+
+.item-activate{
+    margin-right: -170px; 
+}
+
+@media only screen and (max-width: 1670px) {
+
+    .brand-activate{
+        margin-left: 50px;
+    }
+    .item-activate{
+        margin-right: 0px; 
+    }
+
+  }
+

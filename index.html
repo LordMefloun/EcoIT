@@ -23,8 +23,9 @@
 
     <nav id="navbar" class="navbar nv p-3" role="navigation" aria-label="main navigation">
         <div class="container">
-            <div class="navbar-brand">
-            <a class="navbar-item" href="" style="background-color: white;border-radius:1000px;padding:20px">
+    
+    <div class="navbar-brand">
+            <a class="navbar-item" id="brand" href="" style="background-color: hwb(106 30% 34%);border-radius:1000px;padding:20px">
                 <img src="img/logo.png" style="width: 70px;">
             </a>
         
@@ -45,12 +46,12 @@
             </div>
         
             <div class="navbar-end">
-                <div class="navbar-item">
+                <div class="navbar-item" id="navbar-item">
                     <div class="buttons">
-                        <a class="button" href="https://www.instagram.com/ecoit.ja/" style="border:none;border-radius: 10000px;" >
+                        <a class="button" href="https://www.instagram.com/ecoit.ja/" style="border:none;border-radius: 10000px;background-color: rgb(170, 87, 170);" >
                           <img src="img/ig.png">
                         </a>
-                        <a class="button btn is-success" style="border:none;border-radius: 10000px;" >
+                        <a class="button btn btn-4" style="border:none;border-radius: 10000px" >
                             <strong>CZ</strong>
                         </a>
                     </div>
@@ -60,7 +61,7 @@
         </div>
       </nav>
 
-        <button id="upbtn" onclick="scrollOnTop()">⇡</button>
+        <a href="#up" id="upbtn" onclick="scrollOnTop()">⇡</a>
 
       <script>
 
@@ -79,6 +80,8 @@
 
         var navbar = document.getElementById("navbar");
         var html = document.getElementById("html");
+        var brand = document.getElementById("brand");
+        var item = document.getElementById("navbar-item");
 
         var sticky = 10;
 
@@ -88,7 +91,10 @@
                 html.classList.add("has-navbar-fixed-top");
                 navbar.classList.add("p-5");
                 navbar.classList.add("nav-activated");
-                $("#upbtn").fadeIn(270);
+                brand.classList.add("brand-activate");
+                item.classList.add("item-activate");
+
+                $("#upbtn").fadeIn(1000);
             } else {
                 navbar.classList.remove("is-fixed-top");
                 html.classList.remove("has-navbar-fixed-top");
@@ -96,15 +102,18 @@
                 setTimeout(function (){
                     navbar.classList.remove("nav-activated");
                 }, 280);
+                brand.classList.remove("brand-activate");
+                item.classList.remove("item-activate");
+                
 
-                $("#upbtn").fadeOut(270);
+                $("#upbtn").fadeOut(1000);
             }
         }
       </script>
 
 
       <div class="container">
-        <div class="columns mt-6" style="margin-left: 0px;background:rgba(194, 192, 192, 0.192);border-radius:10px;padding: 20px;" >
+        <div class="columns mt-6" style="margin-left: 0px;background:rgba(194, 192, 192, 0.192);border-radius:10px 10px 0 0  ;padding: 20px;" >
             <div class="column landingblock">
                 <div id="text1" style="display: none;"  data-tilt>
                     <h1 class="ltitle">                    
@@ -122,6 +131,7 @@
                             <strong>Download for iOS</strong>
                         </a>
                     </div>
+                    <hr style="  border: 2px solid green;width: 90%;">
                 </div>
                 <div id="text2" style="display: none;"  data-tilt>
                     <h1 class="ltitle">                    
@@ -131,13 +141,20 @@
                     <p class="lphar" style="width: 90%;" >
                             You will choose type of waste, for example plastic, and REDIVIO will automatically find the route to the nearest container for plastics.  <strong class="has-text-success"> The app is also giving you points </strong>. After clicking on the “statistics” icon, the app provides the user with information about collected points. 
                         </p>
+                        <hr style="  border: 2px solid green;width: 90%;">
                 </div>
 
             </div>
             <div class="column has-text-centered">
 
-                <img src="img/mockuprotated.png" style="width: 2000px;z-index: 2">
+                <img src="img/mockuprotated.png" style="width: 800px;z-index: 2">
             </div>
+        </div>
+
+        <div class="columns" style="margin-left: 0px;background-color: hwb(106 30% 34%);padding:20px">
+            <a href="https://ssos.cz" class="button btn btn-3" style="border:unset;">
+                <strong>Checkout school's website</strong>
+            </a>
         </div>
 </div>
 
@@ -183,39 +200,49 @@
 
 </script>
 
+<br>
+<br>
 
-<div class="container">
+<div class="container" style="">
 
     <svg xmlns="http://www.w3.org/2000/svg"  style="margin-top:120px;width: 101%;margin-bottom: -6px;" viewBox="0 10 1238 320"><path fill="#ecf5eb" fill-opacity="1" d="M0,96L40,128C80,160,160,224,240,213.3C320,203,400,117,480,112C560,107,640,181,720,218.7C800,256,880,256,960,234.7C1040,213,1120,171,1200,138.7C1280,107,1360,85,1400,74.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-    <div class="columns" style="margin-left: 0px;background:#ecf5eb;border-radius:0px;padding: 0px;">
+    <div class="columns" style="margin-left: 0px;background:#ecf5eb;padding: 0px">
         <div class="column has-text-centered">
-            <img src="img/mockup.png" style="margin-top: 110px;" alt="">
-        </div>
-        <div class="column">
-            <h1 class="ltitle" style="margin-left: 0px;width: 90%;">Problem we are solving</h1>
-
-            <p class="lphar mt-2"  style="margin-left: 0px;width: 90%;">
-            Every year the number of people who are sorting waste increases slightly, which we can see in decreasing amount of municipal solid waste and growing amount of sorted waste. People are mostly sorting paper, plastics and glass. Collected biowaste comes mostly from gardens in adjacent villages. In residential areas with block of flats, sorted biowaste is insignificant and in some places waste containers are completely missing. 
-
-            </p>
-
-
+            
+            <img src="img/mockup.png" style="margin-top: 110px;" alt="" data-tilt>
         </div>
 
+        <div class="column is-four-fifths columns down">
+
+            <div class="column ">
+                <h1 class="ltitle" style="margin-left: 0px;width: 90%;">Problem we are solving</h1>
+                <hr style="  border: 4px solid green;width: 90%;">
+
+                <p class="lphar mt-2"  style="margin-left: 0px;width: 90%;">
+                Every year the number of people who are sorting waste increases slightly, which we can see in decreasing amount of municipal solid waste and growing amount of sorted waste. People are mostly sorting paper, plastics and glass. Collected biowaste comes mostly from gardens in adjacent villages. In residential areas with block of flats, sorted biowaste is insignificant and in some places waste containers are completely missing. 
+
+                </p>
+
+
+            </div>
+
+            
+            <div class="column ">
+                <p class="lphar"  style="margin-left: 0px;width: 90%;margin-top: 100px">
+                    It is a commonplace that people throw into biowaste container something that does not belong there, and owing to this, the waste is not able to be recycled. Moreover, there is often a low number of containers for edible fats, oils and textile available in towns.
+                </p>
+            </div>
+
+            <div class="column ">
+                <p class="lphar"  style="margin-left: 0px;width: 90%;margin-top: 100px">
+                    Therefore, near blocks of flats people create illegal waste dumps, while they still think that they sort waste in that way. It is necessary to sort waste correctly to ensure it can be recycled and amount of other municipal solid waste can decrease even more. We are convinced that the app for right waste sorting may be a solution of the waste sorting problem in a community.</p>
+                </p>
+            </div>
+        </div>
         
-        <div class="column">
-            <p class="lphar"  style="margin-left: 0px;width: 90%;margin-top: 95px">
-                It is a commonplace that people throw into biowaste container something that does not belong there, and owing to this, the waste is not able to be recycled. Moreover, there is often a low number of containers for edible fats, oils and textile available in towns.
-            </p>
-        </div>
 
-        <div class="column">
-            <p class="lphar"  style="margin-left: 0px;width: 90%;margin-top: 95px">
-                Therefore, near blocks of flats people create illegal waste dumps, while they still think that they sort waste in that way. It is necessary to sort waste correctly to ensure it can be recycled and amount of other municipal solid waste can decrease even more. We are convinced that the app for right waste sorting may be a solution of the waste sorting problem in a community.</p>
-            </p>
-        </div>
-
-
+    </div>
+    <div class="columns" style="margin-left: 0px;background-color: hwb(106 30% 34%);padding:20px;border-radius: 0px 0px 20px 20px;height: 80px;">
 
     </div>
 </div>
